@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container{
+    font-family: yekan;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210, 210, 210);
+    width: 30%;
+    padding: 15px;
+}
+
+.homes{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
+.homes div{
+    height: 90px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.info{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    font-size: 1.5rem;
+}
+
+.info span{
+    margin-right: 15px;
+    font-family: sans-serif;
+}
+
+button{
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 90%;
+    font-family: yekan;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    background-color: rgb(90, 90, 234);
+    border-radius: 10px;
+    display: none;
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(Yekan.woff);
+}
