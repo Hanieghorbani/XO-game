@@ -70,7 +70,7 @@ function equal() {
     homes.children[7].innerText &&
     homes.children[8].innerText
   ) {
-    if (!info.style.color) {
+    if (!info.style.color || info.style.color == 'black') {
       info.innerText = "پایان بازی"
       reStartBtn.style.display = "block"
       playing = false
